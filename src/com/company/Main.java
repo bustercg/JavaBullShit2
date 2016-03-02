@@ -1,9 +1,28 @@
 package com.company;
 
-public class Main {
+import com.sun.javafx.css.Style;
+import com.sun.org.apache.bcel.internal.generic.Select;
 
+public class Main {
+    static double answer=0;
+    static int x;
+    static int y;
+    static String sign;
     public static void main(String[] args) {
-	// write your code here
-        system.out("BITCH NIGGA");
-    }
+
+        GetInput.getNumbers();
+        switch (sign){
+            case "+":
+                Addition.add();
+                break;
+            case "*":
+                Multiplication.multiply();
+                break;
+            case "-":
+                Subtraction.subtract();
+                break;
+            case "/":
+                Division.divide();
+                break;
+        }
 }
